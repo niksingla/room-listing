@@ -1911,15 +1911,16 @@ if( !function_exists('homey_calculate_booking_cost_ajax_weekly') ) {
 }
 
 if( !function_exists('homey_calculate_booking_cost_ajax_monthly') ) {
-    function homey_calculate_booking_cost_ajax_monthly($listing_id, $check_in_date, $check_out_date, $guests, $extra_options) {
-
+    function homey_calculate_booking_cost_ajax_monthly($listing_id, $check_in_date, $check_out_date, $guests, $extra_options) {        
         $prefix = 'homey_';
         $local = homey_get_localization();
         $allowded_html = array();
         $output = '';
-
+        
         $prices_array = homey_get_monthly_prices($check_in_date, $check_out_date, $listing_id, $guests, $extra_options);
-
+        // echo '<pre>';
+        // print_r($local);
+        // exit;
         $price_per_month = homey_formatted_price($prices_array['price_per_month'], true);
         $no_of_months = $prices_array['total_months_count'];
         $no_of_days = $prices_array['days_count'];
@@ -1967,7 +1968,7 @@ if( !function_exists('homey_calculate_booking_cost_ajax_monthly') ) {
 
         $output .= '<div class="pull-right text-right">';
         $output .= '<div class="payment-list-price-detail-total-price">'.homey_formatted_price($total_price).'</div>';
-        $output .= '<a class="payment-list-detail-btn" data-toggle="collapse" data-target=".collapseExample" href="javascript:void(0);" aria-expanded="false" aria-controls="collapseExample">'.esc_attr($local['cs_view_details']).'</a>';
+        //$output .= '<a class="payment-list-detail-btn" data-toggle="collapse" data-target=".collapseExample" href="javascript:void(0);" aria-expanded="false" aria-controls="collapseExample">'.esc_attr($local['cs_view_details']).'</a>';
         $output .= '</div>';
         $output .= '</div>';
 
@@ -5344,13 +5345,15 @@ if(!function_exists('homey_get_monthly_prices')) {
                 $upfront_payment = $security_deposit+$services_fee_final;
             }
         }
-
-        $balance = $total_price - $upfront_payment;
+        
+        $balance = $total_price - $price_per_month;
+        $total_price = $price_per_month;
+        
 
         $prices_array['price_per_month'] = $price_per_month;
         $prices_array['months_total_price'] = $months_total_price;
         $prices_array['total_months_count'] = $total_months_count;
-
+        
         $prices_array['total_price']     = $total_price;
         $prices_array['check_in_date']   = $check_in_date;
         $prices_array['check_out_date']  = $check_out_date;
@@ -5366,7 +5369,8 @@ if(!function_exists('homey_get_monthly_prices')) {
         $prices_array['additional_guests_total_price'] = $total_guests_price;
         $prices_array['extra_prices_html'] = $extra_prices_html;
         $prices_array['balance'] = $balance;
-        $prices_array['upfront_payment'] = $upfront_payment;
+        $prices_array['upfront_payment'] = $price_per_month;
+//        $prices_array['upfront_payment'] = $upfront_payment;
 
         return $prices_array;
 

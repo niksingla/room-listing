@@ -1,0 +1,52 @@
+[30-Oct-2023 18:15:05 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 5223
+[30-Oct-2023 18:15:09 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 5223
+[30-Oct-2023 18:15:13 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 5223
+[30-Oct-2023 18:15:15 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php:4236
+Stack trace:
+#0 C:\xampp\htdocs\rentalwp\wp-content\plugins\homey-core\includes\metaboxes.php(243): homey_calculate_reservation_cost_admin(4680)
+#1 C:\xampp\htdocs\rentalwp\wp-admin\includes\template.php(1443): homey_reservation_meta(Object(WP_Post), Array)
+#2 C:\xampp\htdocs\rentalwp\wp-admin\edit-form-advanced.php(688): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#3 C:\xampp\htdocs\rentalwp\wp-admin\post-new.php(75): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 4236
+[30-Oct-2023 18:15:19 UTC] PHP Warning:  Undefined array key "guest_message" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 90
+[30-Oct-2023 18:15:19 UTC] PHP Deprecated:  stripslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 90
+[30-Oct-2023 18:15:19 UTC] PHP Warning:  Undefined array key "period_days" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 213
+[30-Oct-2023 18:15:19 UTC] PHP Warning:  Undefined array key "booking_has_weekend" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 220
+[30-Oct-2023 18:15:19 UTC] PHP Warning:  Undefined array key "booking_has_custom_pricing" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 221
+[30-Oct-2023 18:15:20 UTC] sending email: You have a new message! to fabrockingnikhil@gmail.com
+[30-Oct-2023 18:15:20 UTC] email not sent You have a new message! to fabrockingnikhil@gmail.com
+[30-Oct-2023 18:15:20 UTC] sending email: New Reservation Request at Rental Homes to fabrockingnikhil@gmail.com
+[30-Oct-2023 18:15:20 UTC] email not sent New Reservation Request at Rental Homes to fabrockingnikhil@gmail.com
+[30-Oct-2023 18:15:20 UTC] sending email: Your Reservation Request Sent to Rental Homes to test@test.com
+[30-Oct-2023 18:15:20 UTC] email not sent Your Reservation Request Sent to Rental Homes to test@test.com
+[30-Oct-2023 18:15:59 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\rentalwp\wp-content\plugins\redux-framework\redux-core\inc\fields\gallery\class-redux-gallery.php on line 41
+[30-Oct-2023 18:15:59 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\rentalwp\wp-includes\formatting.php on line 4477
+[30-Oct-2023 18:15:59 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\rentalwp\wp-content\plugins\redux-framework\redux-core\inc\fields\gallery\class-redux-gallery.php on line 42
+[30-Oct-2023 18:15:59 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\rentalwp\wp-includes\formatting.php on line 4477
+[30-Oct-2023 18:16:08 UTC] sending email: Reservation Booked on Rental Homes to test@test.com
+[30-Oct-2023 18:16:08 UTC] email not sent Reservation Booked on Rental Homes to test@test.com
+[30-Oct-2023 18:16:08 UTC] sending email: Reservation Booked on Rental Homes to fabrockingnikhil@gmail.com
+[30-Oct-2023 18:16:08 UTC] email not sent Reservation Booked on Rental Homes to fabrockingnikhil@gmail.com
+[30-Oct-2023 18:17:31 UTC] PHP Warning:  Undefined array key "subscriptionObj" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\template-parts\dashboard\dashboard.php on line 76
+[30-Oct-2023 18:17:31 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\template-parts\dashboard\dashboard.php on line 76
+[30-Oct-2023 18:17:49 UTC] PHP Warning:  Undefined variable $sub_total_amnt in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3236
+[30-Oct-2023 18:17:49 UTC] PHP Warning:  Undefined variable $sub_total_amnt in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3236
+[30-Oct-2023 18:18:50 UTC] PHP Warning:  Undefined variable $sub_total_amnt in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3236
+[30-Oct-2023 18:18:50 UTC] PHP Warning:  Undefined variable $sub_total_amnt in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3236
+[30-Oct-2023 18:21:21 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\rentalwp\wp-content\plugins\redux-framework\redux-core\inc\fields\gallery\class-redux-gallery.php on line 41
+[30-Oct-2023 18:21:21 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\rentalwp\wp-includes\formatting.php on line 4477
+[30-Oct-2023 18:21:21 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\rentalwp\wp-content\plugins\redux-framework\redux-core\inc\fields\gallery\class-redux-gallery.php on line 42
+[30-Oct-2023 18:21:21 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\rentalwp\wp-includes\formatting.php on line 4477
+[30-Oct-2023 18:22:17 UTC] PHP Warning:  Undefined array key "host_cancel" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 6483
+[30-Oct-2023 18:22:17 UTC] PHP Deprecated:  mktime(): Passing null to parameter #1 ($hour) of type int is deprecated in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\helper.php on line 3520
+[30-Oct-2023 18:22:17 UTC] sending email: Reservation Cancelled on Rental Homes to fabrockingnikhil@gmail.com
+[30-Oct-2023 18:22:17 UTC] email not sent Reservation Cancelled on Rental Homes to fabrockingnikhil@gmail.com
+[30-Oct-2023 18:22:24 UTC] PHP Warning:  Undefined variable $sub_total_amnt in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3236
+[30-Oct-2023 18:22:25 UTC] PHP Warning:  Undefined variable $sub_total_amnt in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3236
+[30-Oct-2023 18:23:30 UTC] PHP Warning:  Undefined array key "total_months_count" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3115
+[30-Oct-2023 18:23:30 UTC] PHP Warning:  Undefined array key "months_total_price" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3117
+[30-Oct-2023 18:23:30 UTC] PHP Warning:  Undefined variable $sub_total_amnt in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3236
+[30-Oct-2023 18:23:30 UTC] PHP Warning:  Undefined array key "total_months_count" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3115
+[30-Oct-2023 18:23:30 UTC] PHP Warning:  Undefined array key "months_total_price" in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3117
+[30-Oct-2023 18:23:30 UTC] PHP Warning:  Undefined variable $sub_total_amnt in C:\xampp\htdocs\rentalwp\wp-content\themes\homey\framework\functions\reservation.php on line 3236
