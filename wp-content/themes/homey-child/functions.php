@@ -9,4 +9,8 @@ function homey_enqueue_styles() {
     
 }
 add_action('wp_enqueue_scripts', 'homey_enqueue_styles');
+
+require_once(get_stylesheet_directory().'/framework/functions/reservation.php');
+require_once(get_stylesheet_directory().'/localization.php');
+
 ?>
