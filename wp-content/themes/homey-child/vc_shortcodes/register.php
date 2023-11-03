@@ -32,6 +32,15 @@ if( !function_exists('homey_register_module') ) {
 
                     <form>
                         <div class="form-group">
+                            <input type="text" name="fname" class="form-control fname-input-1" placeholder="<?php echo esc_attr__('First Name', 'homey'); ?>">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lname" class="form-control lname-input-1" placeholder="<?php echo esc_attr__('Last Name', 'homey'); ?>">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control phone-input-1" placeholder="<?php echo esc_attr__('Phone Number', 'homey'); ?>">
+                        </div>
+                        <div class="form-group">
                             <input name="username" type="text" class="form-control email-input-1" placeholder="<?php esc_html_e('Username','homey'); ?>" />
                         </div>
                         <div class="form-group">
